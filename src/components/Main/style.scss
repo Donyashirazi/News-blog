@@ -1,0 +1,48 @@
+$background-color: #243763;
+$white-color: #fff;
+
+.top-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	& h1 {
+		font-size: 40px;
+	}
+}
+.right-container {
+	display: flex;
+	flex-direction: row;
+}
+.bookmark-button {
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 6px;
+	background-color: $background-color;
+	color: $white-color;
+	& p {
+		margin: 4px;
+	}
+}
+.select-list {
+	width: 12vw;
+	border-radius: 6px;
+	font-size: 20px;
+	margin: 0 10px;
+}
+.bottom-container h2 {
+	font-size: 40px;
+}
+@media screen and (max-width: 1000px) {
+	.container,
+	.top-container,
+	.bottom-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
